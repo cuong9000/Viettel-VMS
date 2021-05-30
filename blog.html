@@ -12,8 +12,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>VIETTEL VMS</title>
-  </head>
-  <body>
+  </head> 
+<body>
   
  <!-- ------chatbox-------->
  <div class="chatbox">
@@ -45,14 +45,8 @@ Mình có thể giúp gì cho bạn không?
   <div class="top_header" id="topNav">
   		<div class="container">
             <div class="content_top">
-                <div class="relogin">
-                	<div class="info_relogin"><img src="images/ico_relogin.png" alt="" > Nguyễn Văn Mạnh <img src="images/arr_relogin.png" alt=""></div>
-                    <ul>
-                    	<li><a href="admin_info.html">Thông tin tài khoản</a></li>
-                        <li><a href="forgot_pass.html">Đổi mật khẩu</a></li>
-                        <li><a href="#">Đăng xuất</a></li>
-                    </ul>
-                </div>
+                <a href="login.html" class="login_top"><img src="images/ico_login1.png" alt=""> Đăng nhập</a>
+                <a href="register.html" class="login_top"><img src="images/ico_login.png" alt=""> Đăng ký</a>
                 <a href="#" class="flag"><img src="images/flag1.png" alt=""></a>
             	<a href="#" class="flag"><img src="images/flag2.png" alt=""></a>
             </div>
@@ -73,7 +67,7 @@ Mình có thể giúp gì cho bạn không?
 			<div class="box_menu">
 				<ul class="nav navbar-nav">
 				  <li><a href="index.html">Trang chủ</a></li>
-				  <li class="dropdown">
+				  <li class="dropdown ">
 					<a href="overview.html" >Sản phẩm </a>
 					<ul class="dropdown-menu">
 					  <li><a href="sp1.html">Cloud VMS</a></li>
@@ -91,123 +85,113 @@ Mình có thể giúp gì cho bạn không?
                   </li>
 				  <li><a href="news.html">Tin tức</a></li>
 				  
-				  <li><a href="blog.html">Blog VMS</a></li>
+				  <li class="active"><a href="blog.html">Blog VMS</a></li>
 				  <li><a href="contact.html">Liên hệ</a></li>
-                  <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quản trị</a>
-                  	<ul class="dropdown-menu">
-					  <li><a href="#">Quản lý license</a></li>
-					  <li><a href="#">Quản lý tin tức</a></li>
-                      <li><a href="#">Quản lý chủ đề blog</a></li>
-					</ul>
-                  </li>
 				</ul>
 			</div>
           </div>
 			
 		  </div>
 	</nav>
-	<div class="admin_body">
-    	<div class="container">
-            <div class="box_flex">
-                <div class="sidebar">
-                    <ul>
-                        <li><a href="admin_account.html"><img src="images/admin1.png" alt=""> Thông tin cá nhân</a></li>
-                        <li><a href="admin_packdata.html"><img src="images/admin2.png" alt=""> Gói cước đang dùng</a></li>
-                        <li class="active"><a href="#"><img src="images/admin3.png" alt=""> Quản lý tin tức</a></li>
-                        <li><a href="admin_license.html"><img src="images/admin4.png" alt=""> Quản lý License</a></li>
-                            <li><a href="admin_blog.html"><img src="images/admin5.png" alt=""> Quản lý chủ đề blog</a></li>
-                    </ul>
-                </div>
-                <div class="right_admin">
-                    <div class="backscrum">
-                    <img src="images/home_bscrum.png" alt="">
-                    <span> Trang chủ</span>
-                    <span> /</span>
-                    <span> Quản lý tin tức</span>
-                </div>
-                    <div class="tit_admin">Quản lý tin tức</div>
-                    <div class="filter_news">
-                        <div class="left_filter">
-                            <select class="option_news"><option>Chọn status</option></select>
-                            <a href="admin_news.html" class="btn_new"><img src="images/ico_new.png" alt=""> Thêm mới tin</a>
-                        </div>
-                        <div class="right_filter">
-                            <input class="search_news">
-                        </div>
+	<div class="banner">
+		<div class="container">
+			
+			<div class="tit_banner aniview" data-av-animation="pulse">
+				<h3>Viettel - Video Management System</h3>
+				<span>Nền tảng thu thập dữ liệu từ Camera và các thiết bị khác để 
+quản lý, lưu trữ, kết hợp phân tích dữ liệu video thông minh</span>
+				<a href="trial.html" class="btn_banner">DÙNG THỬ</a>
+			</div>
+			<div class="img_banner aniview reallyslow" data-av-animation="zoomIn"><img src="images/banner_blog.png" alt=""></div>	
+		</div>
+	</div>
+	  <div class="body_news">
+      	<div class="container">
+            <div class="backscrum">
+                        <img src="images/home_bscrum.png" alt="">
+                        <span> Trang chủ</span>
+                        <span> /</span>
+                        <span> Blog</span>
                     </div>
-                    <div class="table_list">
-                        <table class="table table-responsive table-bordered table_news">
-                            <thead>
-                            <tr>
-                                <th width="30%">Tiêu đề</th>
-                                <th>SL like</th>
-                                <th>SL share</th>
-                                <th>SL view</th>
-                                <th>Ngày</th>
-                                <th>Trạng thái</th>
-                                <th>Hành động</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Cloud VMS - Ứng dụng của tương lai</td>
-                                    <td>100</td>
-                                    <td>100</td>	
-                                    <td>100</td>
-                                    <td>20/12/2021</td>
-                                    <td>Đang hoạt động</td>
-                                    <td>
-                                        <div class="setting_news">
-                                            <a href="#"><img src="images/ico_edit.png" alt=""></a>
-                                            <a href="#"><img src="images/ico_delete.png" alt=""></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Cloud VMS - Ứng dụng của tương lai</td>
-                                    <td>100</td>
-                                    <td>100</td>	
-                                    <td>100</td>
-                                    <td>20/12/2021</td>
-                                    <td>Đang hoạt động</td>
-                                    <td>
-                                        <div class="setting_news">
-                                            <a href="#"><img src="images/ico_edit.png" alt=""></a>
-                                            <a href="#"><img src="images/ico_delete.png" alt=""></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Cloud VMS - Ứng dụng của tương lai</td>
-                                    <td>100</td>
-                                    <td>100</td>	
-                                    <td>100</td>
-                                    <td>20/12/2021</td>
-                                    <td>Đang hoạt động</td>
-                                    <td>
-                                        <div class="setting_news">
-                                            <a href="#"><img src="images/ico_edit.png" alt=""></a>
-                                            <a href="#"><img src="images/ico_delete.png" alt=""></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Cloud VMS - Ứng dụng của tương lai</td>
-                                    <td>100</td>
-                                    <td>100</td>	
-                                    <td>100</td>
-                                    <td>20/12/2021</td>
-                                    <td>Đang hoạt động</td>
-                                    <td>
-                                        <div class="setting_news">
-                                            <a href="#"><img src="images/ico_edit.png" alt=""></a>
-                                            <a href="#"><img src="images/ico_delete.png" alt=""></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="paging">
+        	<div class="tit_h2 tit_news">
+            <span>Blog</span>
+            <input class="search_right">
+            </div>
+            <div class="list_box_news">
+            	<div class="box_news_list">
+                	<div class="img_box_news">
+                    	<a href="#"><img src="images/img_news.png" alt=""></a>
+                    </div>
+                    <div class="txt_box_news">
+                    	<h3><a href="#">Viettel Solutions và Novaon: Đối tác chiến lược cung cấp giải pháp công nghệ</a></h3>
+                        <div class="social_news">
+                        	<div><img src="images/blog_writer.png" alt=""> Nguyễn Văn Khải</div>
+                            <div><img src="images/ico_date.png" alt=""> 12/12/2021</div>
+                            <div><img src="images/ico_view.png" alt=""> 20</div>
+                            <div><a href="#"><img src="images/ico_like2.png" alt=""> 12</a></div>
+                            <div><a href="#"><img src="images/ico_share.png" alt=""> 21</a></div>
+                            
+                          </div>
+                          <p>Viettel hướng đến mỗi giáo viên, học sinh có 1 mã số định danh trong giáo dục. Ngày 09/12/2020, tại Hà Nội, Bộ Giáo dục và Đào tạo (GD&ĐT) tổ...</p>
+                          <a href="" class="btn_seemore">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="box_news_list">
+                	<div class="img_box_news">
+                    	<a href="#"><img src="images/img_news.png" alt=""></a>
+                    </div>
+                    <div class="txt_box_news">
+                    	<h3><a href="#">Viettel Solutions và Novaon: Đối tác chiến lược cung cấp giải pháp công nghệ</a></h3>
+                        <div class="social_news">
+                        	<div><img src="images/blog_writer.png" alt=""> Nguyễn Văn Khải</div>
+                            <div><img src="images/ico_date.png" alt=""> 12/12/2021</div>
+                            <div><img src="images/ico_view.png" alt=""> 20</div>
+                            <div><a href="#"><img src="images/ico_like2.png" alt=""> 12</a></div>
+                            <div><a href="#"><img src="images/ico_share.png" alt=""> 21</a></div>
+                            
+                          </div>
+                          <p>Viettel hướng đến mỗi giáo viên, học sinh có 1 mã số định danh trong giáo dục. Ngày 09/12/2020, tại Hà Nội, Bộ Giáo dục và Đào tạo (GD&ĐT) tổ...</p>
+                          <a href="" class="btn_seemore">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="box_news_list">
+                	<div class="img_box_news">
+                    	<a href="#"><img src="images/img_news.png" alt=""></a>
+                    </div>
+                    <div class="txt_box_news">
+                    	<h3><a href="#">Viettel Solutions và Novaon: Đối tác chiến lược cung cấp giải pháp công nghệ</a></h3>
+                        <div class="social_news">
+                        	<div><img src="images/blog_writer.png" alt=""> Nguyễn Văn Khải</div>
+                            <div><img src="images/ico_date.png" alt=""> 12/12/2021</div>
+                            <div><img src="images/ico_view.png" alt=""> 20</div>
+                            <div><a href="#"><img src="images/ico_like2.png" alt=""> 12</a></div>
+                            <div><a href="#"><img src="images/ico_share.png" alt=""> 21</a></div>
+                            
+                          </div>
+                          <p>Viettel hướng đến mỗi giáo viên, học sinh có 1 mã số định danh trong giáo dục. Ngày 09/12/2020, tại Hà Nội, Bộ Giáo dục và Đào tạo (GD&ĐT) tổ...</p>
+                          <a href="" class="btn_seemore">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="box_news_list">
+                	<div class="img_box_news">
+                    	<a href="#"><img src="images/img_news.png" alt=""></a>
+                    </div>
+                    <div class="txt_box_news">
+                    	<h3><a href="#">Viettel Solutions và Novaon: Đối tác chiến lược cung cấp giải pháp công nghệ</a></h3>
+                        <div class="social_news">
+                        	<div><img src="images/blog_writer.png" alt=""> Nguyễn Văn Khải</div>
+                            <div><img src="images/ico_date.png" alt=""> 12/12/2021</div>
+                            <div><img src="images/ico_view.png" alt=""> 20</div>
+                            <div><a href="#"><img src="images/ico_like2.png" alt=""> 12</a></div>
+                            <div><a href="#"><img src="images/ico_share.png" alt=""> 21</a></div>
+                            
+                          </div>
+                          <p>Viettel hướng đến mỗi giáo viên, học sinh có 1 mã số định danh trong giáo dục. Ngày 09/12/2020, tại Hà Nội, Bộ Giáo dục và Đào tạo (GD&ĐT) tổ...</p>
+                          <a href="" class="btn_seemore">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="paging">
                             <ul class="pagination modal-2">
                               <li><a href="#" class="prev">« </a></li>
                               <li><a href="#">1</a></li>
@@ -222,12 +206,9 @@ Mình có thể giúp gì cho bạn không?
                               <li><a href="#" class="next">  »</a></li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-           
         </div>
-    </div>
+      </div>
+	  
 	  <div class="footer">
 		  <div class="container">
 			  <div class="content_footer">

@@ -12,8 +12,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>VIETTEL VMS</title>
-  </head>
-  <body>
+  </head> 
+<body>
   
  <!-- ------chatbox-------->
  <div class="chatbox">
@@ -45,14 +45,8 @@ Mình có thể giúp gì cho bạn không?
   <div class="top_header" id="topNav">
   		<div class="container">
             <div class="content_top">
-                <div class="relogin">
-                	<div class="info_relogin"><img src="images/ico_relogin.png" alt="" > Nguyễn Văn Mạnh <img src="images/arr_relogin.png" alt=""></div>
-                    <ul>
-                    	<li><a href="admin_info.html">Thông tin tài khoản</a></li>
-                        <li><a href="forgot_pass.html">Đổi mật khẩu</a></li>
-                        <li><a href="#">Đăng xuất</a></li>
-                    </ul>
-                </div>
+                <a href="login.html" class="login_top"><img src="images/ico_login1.png" alt=""> Đăng nhập</a>
+                <a href="register.html" class="login_top"><img src="images/ico_login.png" alt=""> Đăng ký</a>
                 <a href="#" class="flag"><img src="images/flag1.png" alt=""></a>
             	<a href="#" class="flag"><img src="images/flag2.png" alt=""></a>
             </div>
@@ -73,7 +67,7 @@ Mình có thể giúp gì cho bạn không?
 			<div class="box_menu">
 				<ul class="nav navbar-nav">
 				  <li><a href="index.html">Trang chủ</a></li>
-				  <li class="dropdown">
+				  <li class="dropdown ">
 					<a href="overview.html" >Sản phẩm </a>
 					<ul class="dropdown-menu">
 					  <li><a href="sp1.html">Cloud VMS</a></li>
@@ -81,7 +75,7 @@ Mình có thể giúp gì cho bạn không?
                       <li><a href="sp3.html">On Premise VMS</a></li>
 					</ul>
 				  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hỗ trợ</a>
+                  <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hỗ trợ</a>
                   	<ul class="dropdown-menu">
 					  <li><a href="sdk.html">SDK</a></li>
 					  <li><a href="document.html">Document</a></li>
@@ -93,80 +87,90 @@ Mình có thể giúp gì cho bạn không?
 				  
 				  <li><a href="blog.html">Blog VMS</a></li>
 				  <li><a href="contact.html">Liên hệ</a></li>
-                  <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quản trị</a>
-                  	<ul class="dropdown-menu">
-					  <li><a href="#">Quản lý license</a></li>
-					  <li><a href="#">Quản lý tin tức</a></li>
-                      <li><a href="#">Quản lý chủ đề blog</a></li>
-					</ul>
-                  </li>
 				</ul>
 			</div>
           </div>
 			
 		  </div>
 	</nav>
-	<div class="admin_body">
-    	<div class="container">
-        	<div class="box_flex">
-            	<div class="sidebar">
-                    	<ul>
-                        	<li><a href="admin_account.html"><img src="images/admin1.png" alt=""> Thông tin cá nhân</a></li>
-                        <li><a href="admin_packdata.html"><img src="images/admin2.png" alt=""> Gói cước đang dùng</a></li>
-                        <li class="active"><a href="#"><img src="images/admin3.png" alt=""> Quản lý tin tức</a></li>
-                        <li><a href="admin_license.html"><img src="images/admin4.png" alt=""> Quản lý License</a></li>
-                            <li><a href="admin_blog.html"><img src="images/admin5.png" alt=""> Quản lý chủ đề blog</a></li>
-                        </ul>
-                    </div>
-                <div class="right_admin">
-                	<div class="backscrum">
-                    	<img src="images/home_bscrum.png" alt="">
+	<div class="banner">
+		<div class="container">
+			
+			<div class="tit_banner aniview" data-av-animation="pulse">
+				<h3>Viettel - Video Management System</h3>
+				<span>Nền tảng thu thập dữ liệu từ Camera và các thiết bị khác để 
+quản lý, lưu trữ, kết hợp phân tích dữ liệu video thông minh</span>
+				<a href="trial.html" class="btn_banner">DÙNG THỬ</a>
+			</div>
+			<div class="img_banner aniview reallyslow" data-av-animation="zoomIn"><img src="images/banner_support.png" alt=""></div>	
+		</div>
+	</div>
+	  <div class="body_news">
+      	<div class="container">
+            <div class="backscrum">
+                        <img src="images/home_bscrum.png" alt="">
                         <span> Trang chủ</span>
                         <span> /</span>
-                        <span> Quản lý tin tức</span>
+                        <span> Hỗ trợ</span>
+                        <span> /</span>
+                        <span> SDK</span>
                     </div>
-                    <div class="tit_admin">Thêm mới tin tức</div>
-                    <div class="admin_body_txt">
-                    	<div class="form_trial">
-                        	<div class="line_login">
-                                <div class="box_form">
-                                <span>Tiêu đề </span>
-                                <input class="form-control">
-                                </div>
-                            </div>
-                            <div class="line_login">
-                                <div class="fileUploadInput">
-                                    <label>Ảnh hiển thị trang chủ</label>
-                                    <input type="file"/>
-                                    <button>Chọn ảnh</button>
-                                  </div>
-                            </div>
-                            <div class="line_login">
-                                <div class="box_form">
-                                <span>Mô tả ngắn </span>
-                                <textarea class="form-control" style="height:100px"></textarea>
-                                </div>
-                            </div>
-                            <div class="line_login">
-                                <div class="box_form">
-                                <span>Trạng thái </span>
-                                <select class="form-control"><option>Draft</option></select>
-                                </div>
-                            </div>
-                            <div class="txt_editer">
-                            <img src="images/editer.png" alt="">
-                            	<textarea class="form-control"></textarea>
-                            </div>
-                        </div>
-                        <div class="btn_bot_new">
-                        	<a href="#" class="btn_banner">Thêm mới</a>
-                            <a href="#" class="btn_banner cancel_btn">Hủy bỏ</a>
-                        </div>
+        	<div class="h2_support">
+                <span>SDK</span>
+                <span><img src="images/arr_h2.png" alt=""></span>
+                <span>Xem trực tiếp</span>
+            </div>
+            <div class="box_support">
+            	<div class="menu_right">
+                	<ul>
+                    	<li class="active"><a href="support_sdk.html">SDK</a>
+                        	<ul>
+                            	<li class="active"><a href="support_sdk.html">Xem trực tiếp</a></li>
+                                <li><a href="support_sdk.html">Xem lại</a></li>
+                                <li><a href="support_sdk.html">Luồng Meta data</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="support_document.html">Document</a>
+                        	<ul>
+                            	<li><a href="support_document.html">Hướng dẫn sử dụng</a></li>
+                                <li><a href="support_document.html">Tài liệu tích hợp</a></li>
+                                <li><a href="support_document.html">API</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sizing.html">Sizing hệ thống</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="content_left">
+                	<div class="list_tab">
+                    	<ul>
+                        	<li class="active"><span>Curl</span></li>
+                            <li><span>Android</span></li>
+                            <li ><span>C#</span></li>
+                            <li ><span>Obj</span></li>
+                            <li ><span>PHP</span></li>
+                        </ul>
+                    </div>
+                    <div class="box_code">
+                    	<span>function curl($url) {<br>
+  $ch = @curl_init();<br>
+  curl_setopt($ch, CURLOPT_URL, $url);<br>
+  $head[] = "Connection: keep-alive";<br>
+  $head[] = "Keep-Alive: 300";<br>
+  $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";<br>
+  $head[] = "Accept-Language: en-us,en;q=0.5";<br>
+  curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36');<br>
+  curl_setopt($ch, CURLOPT_HTTPHEADER, $head);<br>
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);<br>
+  curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+
+</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+      </div>
+	  
 	  <div class="footer">
 		  <div class="container">
 			  <div class="content_footer">

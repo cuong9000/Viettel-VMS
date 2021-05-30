@@ -112,9 +112,9 @@ Mình có thể giúp gì cho bạn không?
             	<div class="sidebar">
                     	<ul>
                         	<li><a href="admin_account.html"><img src="images/admin1.png" alt=""> Thông tin cá nhân</a></li>
-                        <li><a href="admin_packdata.html"><img src="images/admin2.png" alt=""> Gói cước đang dùng</a></li>
-                        <li class="active"><a href="#"><img src="images/admin3.png" alt=""> Quản lý tin tức</a></li>
-                        <li><a href="admin_license.html"><img src="images/admin4.png" alt=""> Quản lý License</a></li>
+                            <li class="active"><a href="#"><img src="images/admin2.png" alt=""> Gói cước đang dùng</a></li>
+                            <li><a href="admin_news.html"><img src="images/admin3.png" alt=""> Quản lý tin tức</a></li>
+                            <li><a href="admin_license.html"><img src="images/admin4.png" alt=""> Quản lý License</a></li>
                             <li><a href="admin_blog.html"><img src="images/admin5.png" alt=""> Quản lý chủ đề blog</a></li>
                         </ul>
                     </div>
@@ -123,44 +123,56 @@ Mình có thể giúp gì cho bạn không?
                     	<img src="images/home_bscrum.png" alt="">
                         <span> Trang chủ</span>
                         <span> /</span>
-                        <span> Quản lý tin tức</span>
+                        <span> Gói cước đang sử dụng</span>
                     </div>
-                    <div class="tit_admin">Thêm mới tin tức</div>
+                    <div class="tit_admin">Gói cước đang sử dụng</div>
                     <div class="admin_body_txt">
-                    	<div class="form_trial">
-                        	<div class="line_login">
-                                <div class="box_form">
-                                <span>Tiêu đề </span>
-                                <input class="form-control">
-                                </div>
-                            </div>
-                            <div class="line_login">
-                                <div class="fileUploadInput">
-                                    <label>Ảnh hiển thị trang chủ</label>
-                                    <input type="file"/>
-                                    <button>Chọn ảnh</button>
-                                  </div>
-                            </div>
-                            <div class="line_login">
-                                <div class="box_form">
-                                <span>Mô tả ngắn </span>
-                                <textarea class="form-control" style="height:100px"></textarea>
-                                </div>
-                            </div>
-                            <div class="line_login">
-                                <div class="box_form">
-                                <span>Trạng thái </span>
-                                <select class="form-control"><option>Draft</option></select>
-                                </div>
-                            </div>
-                            <div class="txt_editer">
-                            <img src="images/editer.png" alt="">
-                            	<textarea class="form-control"></textarea>
-                            </div>
-                        </div>
+                    	<div class="table_list">
+                        <table class="table table-responsive table-bordered table_news text-center">
+                            <thead>
+                            <tr>
+                                <th width="40">STT</th>
+                                <th>Gói cước</th>
+                                <th>Ngày kích hoạt</th>
+                                <th>Ngày hết hạn</th>
+                                <th>Giá gói cước</th>
+                                <th>Trạng thái</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Cloud VMS</td>
+                                    <td>20/02/2020</td>	
+                                    <td>30/02/2020</td>
+                                    <td>100.000</td>
+                                    <td>Đang hoạt động</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Cloud VMS</td>
+                                    <td>20/02/2020</td>	
+                                    <td>30/02/2020</td>
+                                    <td>100.000</td>
+                                    <td>Đang hoạt động</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Cloud VMS</td>
+                                    <td>20/02/2020</td>	
+                                    <td>30/02/2020</td>
+                                    <td>100.000</td>
+                                    <td>Đang hoạt động</td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                         <div class="btn_bot_new">
-                        	<a href="#" class="btn_banner">Thêm mới</a>
-                            <a href="#" class="btn_banner cancel_btn">Hủy bỏ</a>
+                        	<a href="#" class="btn_banner">Gia hạn</a>
+                            <a href="#" class="btn_banner ">Mua thêm gói</a>
                         </div>
                     </div>
                 </div>
