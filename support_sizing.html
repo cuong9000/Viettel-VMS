@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>VIETTEL VMS</title>
+  </head> 
+<body>
+  
+ <!-- ------chatbox-------->
+ <div class="chatbox">
+	 <div class="ico_chatbox"><img src="images/chatbox.png" alt="">
+		 <span> Chat với chúng tôi</span>
+	 </div>
+	 <div class="box_chatbox">
+	 	<div class="header_chatbox">
+			<h3>Hỗ trợ trực tuyến</h3>
+			<div class="hide_box"><img src="images/hide_box.png" alt=""></div>
+		 </div>
+		 <div class="body_chatbox">
+		 	<div class="box_chat">
+		 		Chào bạn. 
+Mình có thể giúp gì cho bạn không?
+			 </div>
+			 <div class="box_chat user_chat">
+		 		Mình cần tư vấn về sản phẩm			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+		 <div class="comt_chatbox">
+		 	<input type="text" placeholder="Nhập tin nhắn tại đây">
+			 <a href="#" class="btn_sendchat"><img src="images/send.png" alt=""></a>
+		 </div>
+	 </div>
+ </div>
+ <!-- ------END chatbox-------->
+  
+  <div class="top_header" id="topNav">
+  		<div class="container">
+            <div class="content_top">
+                <a href="login.html" class="login_top"><img src="images/ico_login1.png" alt=""> Đăng nhập</a>
+                <a href="register.html" class="login_top"><img src="images/ico_login.png" alt=""> Đăng ký</a>
+                <a href="#" class="flag"><img src="images/flag1.png" alt=""></a>
+            	<a href="#" class="flag"><img src="images/flag2.png" alt=""></a>
+            </div>
+        </div>
+  </div>
+    <nav class="navbar navbar-expand-lg ">
+		  <div class="container">
+			<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+          </div>
+			<div id="navbar" class="navbar-collapse collapse">
+			<div class="box_menu">
+				<ul class="nav navbar-nav">
+				  <li><a href="index.html">Trang chủ</a></li>
+				  <li class="dropdown ">
+					<a href="overview.html" >Sản phẩm </a>
+					<ul class="dropdown-menu">
+					  <li><a href="sp1.html">Cloud VMS</a></li>
+					  <li><a href="sp2.html">Private Cloud VMS</a></li>
+                      <li><a href="sp3.html">On Premise VMS</a></li>
+					</ul>
+				  </li>
+                  <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hỗ trợ</a>
+                  	<ul class="dropdown-menu">
+					  <li><a href="support_sdk.html">SDK</a></li>
+					  <li><a href="support_document.html">Document</a></li>
+                      <li><a href="support_sizing.html">Sizing hệ thống</a></li>
+                      <li><a href="faq.html">FAQ</a></li>
+					</ul>
+                  </li>
+				  <li><a href="news.html">Tin tức</a></li>
+				  
+				  <li><a href="blog.html">Blog VMS</a></li>
+				  <li><a href="contact.html">Liên hệ</a></li>
+				</ul>
+			</div>
+          </div>
+			
+		  </div>
+	</nav>
+	<div class="banner">
+		<div class="container">
+			
+			<div class="tit_banner aniview" data-av-animation="pulse">
+				<h3>Viettel - Video Management System</h3>
+				<span>Nền tảng thu thập dữ liệu từ Camera và các thiết bị khác để 
+quản lý, lưu trữ, kết hợp phân tích dữ liệu video thông minh</span>
+				<a href="trial.html" class="btn_banner">DÙNG THỬ</a>
+			</div>
+			<div class="img_banner aniview reallyslow" data-av-animation="zoomIn"><img src="images/banner_support.png" alt=""></div>	
+		</div>
+	</div>
+	  <div class="body_news">
+      	<div class="container">
+            <div class="backscrum">
+                        <img src="images/home_bscrum.png" alt="">
+                        <span> Trang chủ</span>
+                        <span> /</span>
+                        <span> Hỗ trợ</span>
+                        <span> /</span>
+                        <span> Sizing hệ thống</span>
+                    </div>
+        	<div class="h2_support">
+                <span>Storage and Sizing</span>
+            </div>
+            <div class="sizing">
+            	<div class="line_sizing">
+                	<div class="storage_throughput">
+                    	<div class="storage">
+                        	<h3>Storage Calculator</h3>
+                            <div class="function">Video</div>
+                            <table>
+                            	<tr>
+                                	<th>Group name</th>
+                                    <th>Channels</th>
+                                    <th>Resolution</th>
+                                    <th>Frame Rate<p>[Fps]</p></th>
+                                    <th>Video Quality</th>
+                                    <th>Bit-rate<p>[Kbps]</p></th>
+                                    <th>Activity<p>[%]</p></th>
+                                    <th>Storage /day<p>[Gb/day]</p></th>
+                                    <th>Retention<p>[Days]</p></th>
+                                    <th>Total Storage<p>[Gb]</p></th>
+                                </tr>
+                                <tr>
+                                	<td><input class="input_sizing"></td>
+                                    <td><input class="input_sizing"></td>
+                                    <td><select class="input_sizing"><option>4CIF</option></select></td>
+                                    <td><select class="input_sizing"><option>03/25</option></select></td>
+                                    <td><select class="input_sizing"><option>Normal</option></select></td>
+                                    <td><input class="input_sizing" disabled value="1536"></td>
+                                    <td><input class="input_sizing" value="100"></td>
+                                    <td><input class="input_sizing text-right" disabled value="1536"></td>
+                                    <td><input class="input_sizing" value="1"></td>
+                                    <td><input class="input_sizing" disabled value="1535.90"></td>
+                                </tr>
+                                <tr>
+                                	<td><input class="input_sizing"></td>
+                                    <td><input class="input_sizing"></td>
+                                    <td><select class="input_sizing"><option>4CIF</option></select></td>
+                                    <td><select class="input_sizing"><option>03/25</option></select></td>
+                                    <td><select class="input_sizing"><option>Normal</option></select></td>
+                                    <td><input class="input_sizing" disabled value="1536"></td>
+                                    <td><input class="input_sizing" value="100"></td>
+                                    <td><input class="input_sizing text-right" disabled value="1536"></td>
+                                    <td><input class="input_sizing" value="1"></td>
+                                    <td><input class="input_sizing" disabled value="1535.90"></td>
+                                </tr>
+                                <tr>
+                                	<td><input class="input_sizing"></td>
+                                    <td><input class="input_sizing" value="8"></td>
+                                    <td><select class="input_sizing"><option>4CIF</option></select></td>
+                                    <td><select class="input_sizing"><option>03/25</option></select></td>
+                                    <td><select class="input_sizing"><option>Normal</option></select></td>
+                                    <td><input class="input_sizing" disabled value="1536"></td>
+                                    <td><input class="input_sizing" value="100"></td>
+                                    <td><input class="input_sizing text-right" disabled value="1536"></td>
+                                    <td><input class="input_sizing" value="1"></td>
+                                    <td><input class="input_sizing" disabled value="1535.90"></td>
+                                </tr>
+                                <tr>
+                                	<td class="tit_table" colspan="10">
+                                    	<span>Audio</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td></td>
+                                    <td><input class="input_sizing" value="8"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input class="input_sizing" value="64" disabled></td>
+                                    <td></td>
+                                    <td><input class="input_sizing" value="0" disabled></td>
+                                    <td><input class="input_sizing" value="0" ></td>
+                                    <td><input class="input_sizing" value="0" disabled></td>
+                                </tr>
+                                <tr>
+                                	<td class="tit_table" colspan="10">
+                                    	<span>Total</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td></td>
+                                    <td><input class="input_sizing" value="8"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input class="input_sizing" value="135.90" disabled></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="throughput">
+                        	<h3>Throughput</h3>
+                            <div class="function"></div>
+                            <table>
+                            	<tr>
+                                    <th>Recording<p>[Mps]</p></th>
+                                </tr>
+                                <tr>
+                                	<td><input class="input_sizing" disabled value="12.00"></td>
+                                </tr>
+                                <tr>
+                                	<td><input class="input_sizing" disabled value="12.00"></td>
+                                </tr>
+                                <tr>
+                                	<td><input class="input_sizing" disabled value="12.00"></td>
+                                </tr>
+                                <tr>
+                                	<td class="tit_table">
+                                    	
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td><input class="input_sizing" disabled value="12.00"></td>
+                                </tr>
+                                <tr>
+                                	<td class="tit_table">
+                                    	
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td><input class="input_sizing" disabled value="12.00"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="line_sizing">
+                	<div class="storage_throughput">
+                    	<div class="storage">
+                        	<h3>Server sizing</h3>
+                            <table>
+                            	<tr>
+                                	<th>Server Type *</th>
+                                    <th>Recording<p>[Mps]</p></th>
+                                    <th>Live Monitoring<p>[Mps]</p></th>
+                                    <th>PlayBack<p>[Mps]</p></th>
+                                    <th>Storage<br>
+Throghput<p>[Days]</p></th>
+                                    <th>Incoming<br>
+Network<p>[Mps]</p></th>
+                                    <th>Outcoming<br>Network<p>[Mps]</p></th>
+                                    <th>Computational<br>Throughput<p>[Mps]</p></th>
+                                    <th>CMax Storage<p>[Gb]</p></th>
+                                    <th>ONum Of Server<br>
+Required</th>
+                                </tr>
+                                <tr>
+                                	<td><input class="input_sizing"></td>
+                                    <td><input class="input_sizing"></td>
+                                    <td><select class="input_sizing"><option>4CIF</option></select></td>
+                                    <td><select class="input_sizing"><option>03/25</option></select></td>
+                                    <td><select class="input_sizing"><option>Normal</option></select></td>
+                                    <td><input class="input_sizing" disabled value="1536"></td>
+                                    <td><input class="input_sizing" value="100"></td>
+                                    <td><input class="input_sizing text-right" disabled value="1536"></td>
+                                    <td><input class="input_sizing" value="1"></td>
+                                    <td><input class="input_sizing" disabled value="1535.90"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+	  
+	  <div class="footer">
+		  <div class="container">
+			  <div class="content_footer">
+				  <div class="logo_footer">
+					  <a href="index.html"><img src="images/logo.png" alt=""></a>
+					  <div class="address_footer">Cơ quan chủ quản: Tổng Công ty Giải pháp Doanh nghiệp Viettel – Chi nhánh Tập đoàn Công nghiệp – Viễn thông Quân đội<br>
+Địa chỉ: Số 1 đường Trần Hữu Dực, Phường Mỹ Đình 2, Quận Nam Từ Liêm, Hà Nội, Việt Nam
+Mã số doanh nghiệp: 0100109106-476 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày 26/09/2018, sửa đổi lần thứ 2 ngày 22/07/2019</div>
+					  <div class="bct_logo">
+						  <img src="images/footer_social1.png" alt="">
+						  <img src="images/footer_social2.png" alt="">
+						  <img src="images/footer_social3.png" alt="">
+					  </div>
+				  </div>
+				  <div class="link_footer">
+					  <h3>Sản phẩm</h3>
+					  <ul>
+						  <li><a href="sp1.html">Cloud VMS</a></li>
+						  <li><a href="sp2.html">Private Cloud VMS</a></li>
+						  <li><a href="sp3.html">On Premise VMS</a></li>
+					  </ul>
+				  </div>
+				  <div class="link_footer">
+					  <h3>Hỗ trợ</h3>
+					  <ul>
+						  <li><a href="support_sdk.html">SDK</a></li>
+						  <li><a href="support_sizing.html">Sizing</a></li>
+                          <li><a href="#">FAQ</a></li>
+					  </ul>
+					  
+				  </div>
+				  <div class="link_footer">
+					  <h3>Tải ứng dụng</h3>
+					  <div class="soccial_footer">
+						  <a href="#"><img src="images/app_pc.png" alt=""></a>
+						  <a href="#"><img src="images/app_google.png" alt=""></a>
+                          <a href="#"><img src="images/app_apple.png" alt=""></a>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+	  <div class="bot_footer">
+		  <span>Email: Viettel@gmail.com</span>
+		  <span>Phone: 0123456789</span>
+		  <span>Fax: 905-581-2211</span>
+	  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+	 
+	  <script>	
+	  (function(){
+		  jQuery('#theCarousel,theCarousel1,theCarousel2').carousel();
+
+			}());
+
+			(function(){
+			  jQuery('.carousel-showmanymoveone .item').each(function(){
+			    var itemToClone = jQuery(this);
+
+			    for (var i=1;i<3;i++) {
+			      itemToClone = itemToClone.next();
+
+			      // wrap around if at end of item collection
+			      if (!itemToClone.length) {
+			        itemToClone = jQuery(this).siblings(':first');
+			      }
+
+			      // grab item, clone, add marker class, add to collection
+			      itemToClone.children(':first-child').clone()
+			        .addClass("cloneditem-"+(i))
+			        .appendTo(jQuery(this));
+			    }
+			  });
+		}());
+					
+			(function() {
+				jQuery('.carousel-showmanymoveone').carousel({
+					interval: false
+				}); 
+			}());
+
+
+
+	  </script>
+      <script src="js/jquery.aniview.js"></script>
+      <script>
+		var options = {
+			animateThreshold: 150,
+			scrollPollInterval: 20
+		}
+		$('.aniview').AniView(options);
+		</script>
+		<script src="js/showmoreless.js" type="text/javascript"></script>
+		<script type="text/javascript">
+    $(document).ready(function(e){
+        
+        $('.show-less-div-5').myOwnLineShowMoreLess({
+            showLessAfterMore:false,
+			showMoreText:'Xem thêm',
+			showLessLine:4
+        });
+    });
+</script>
+  <script type="text/javascript" src="js/writerJS.js"></script> 
+  </body>
+</html>

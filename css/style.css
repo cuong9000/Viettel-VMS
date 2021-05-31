@@ -131,7 +131,7 @@ img{
 	content: "";
 	position: absolute;
 	left:0;
-	bottom: -14px;
+	bottom: -12px;
 	background: #EE0033;
 	width: 100%;
 	height: 4px;
@@ -573,7 +573,7 @@ a.more_news{
 	margin-top:10px;
 }
 .social_news div{
-	padding-right:10px;
+	padding-right:15px;
 	color:#555555;
 }
 .social_news div a{
@@ -956,7 +956,7 @@ a.more_feature:hover{
 .topNav .navbar{
 	top:0;
 	transition:all 0.5s;
-	box-shadow: 0px 0px 20px rgb(41 41 42 / 7%);
+	box-shadow: 0px 0px 20px rgb(41 41 42 / 15%);
 	
 }
 .box_overview{
@@ -1432,8 +1432,8 @@ i.require{
 	margin-top:15px;
 }
 .tit_admin{
-	font-size:30px;
-	margin-top:25px;
+	font-size:26px;
+	margin-top:15px;
 }
 .filter_news{
 	background:#f5f5f5;
@@ -1640,7 +1640,7 @@ i.require{
 	font-size:32px;
 }
 .h2_support{
-	padding-top:40px;
+	padding-top:20px;
 	font-weight:bold;
 	display:flex;
 	align-items:center;
@@ -1689,6 +1689,10 @@ i.require{
 .menu_right li.active ul li.active a{
 	font-weight:bold;
 }
+.menu_right li.active a:hover{
+	text-decoration:none;
+	background:#f5f5f5;
+}
 .menu_right li a:hover{
 	text-decoration:none;
 	background:#f5f5f5;
@@ -1700,7 +1704,7 @@ i.require{
 	margin-top:30px;
 	margin-bottom:40px;
 }
-.box_code{
+.tab-content{
 	background:#f2f2f2;
 	padding:30px;
 	border-radius:0 0 4px 4px;
@@ -1709,13 +1713,14 @@ i.require{
 	list-style:none;
 	display:inline-block;
 }
-.list_tab li span{
+.list_tab li a{
 	display:block;
 	padding:5px 10px;
 	cursor:pointer;
 	font-size:18px;
+	color:#000;
 }
-.list_tab li.active span{
+.list_tab li.active a{
 	color:#fff;
 	background:#EE0033;
 	
@@ -1769,7 +1774,146 @@ i.require{
 	padding-bottom:20px;
 	margin-bottom:20px;
 }
+.short_new{
+	border-top:1px solid #ccc;
+	padding-top:20px;
+	margin-top:20px;
+	padding-bottom:20px;
+}
+.img_news_detail{
+	padding-bottom:20px;
+}
+.comment_news{
+	border-top:1px solid #ccc;
+	padding-top:20px;
+	margin-top:20px;
+	padding-bottom:20px;
+}
+.tit_comt{
+	font-size:18px;
+	font-weight:bold;
+}
+.box_content_bl{
+	display:flex;
+}
+.content_bl{
+	
+	padding-top:20px;
+	position:relative;
+}
+.content_bl .content_bl{
+	padding-left:46px;
+}
+.line_content{
+	border-bottom:1px dotted #ccc;
+}
+.reply_bl{
+	margin-top:5px;
+	display:inline-block;
+	padding:5px;
+	background:#f2f2f2;
+	border-radius:4px;
+}
+.btn_bl{
+	text-align:right;
+}
+.reply_bl:hover{
+	background:#e6e6e6;
+	text-decoration:none;
+}
+.txt_bl{
+	padding-left:15px;
+	width:calc(100% - 46px);
+}
+.txt_bl h4{
+	font-size:14px;
+	font-weight:bold;
+	padding-bottom:5px;
+}
+.txt_bl span{
+	font-size:14px;
+	
+}
+.other_news{
+	padding:60px 0;
+}
+.author{
+	border-top:1px solid #ccc;
+	padding-top:5px;
+	margin-top:15px;
+}
+.line_sizing h3{
+	font-size:24px;
+	border-bottom:1px solid #ccc;
+	padding-bottom:15px;
+	font-weight:400;
+}
+.throughput{
+	padding-left:30px;
+}
+.function{
+	height:50px;
+	line-height:50px;
+	font-size:18px;
+	font-weight:bold;
+}
+.storage_throughput{
+	display:flex;
+	justify-content:flex-start;
+}
+.line_sizing{
+	margin-top:30px;
+}
+.sizing{
+	margin-bottom:40px;
+}
+.line_sizing table{
+	width:100%;
+}
+.line_sizing th,.line_sizing td{
+	padding:5px;
+}
+.line_sizing th{
+	background-color:rgba(238,0,51,.1);
+	text-align:center;
+	vertical-align:top;
+}
+.line_sizing td{
+	background:#f2f2f2;
+}
+.line_sizing th p{
+	font-weight:400;
+	font-size:12px;
+	margin-bottom:0;
+}
+.input_sizing{
+	min-width:85px;
+}
+.input_sizing{
+	padding:0 5px;
+	border:1px solid #ccc;
+	background:#fff;
+	width:100%;
+	height:35px;
+	line-height:35px;
+}
+.input_sizing:disabled{
+	background:#f5f5f5;
+	color:#999;
+}
+.tit_table{
+	height:50px;
+	background:#fff !important;
+}
+.tit_table span{
+	font-size:18px;
+	font-weight:bold;
+}
 @media only screen and (min-width: 1000px) {
+	.short_new{
+		font-size:18px;
+		font-weight:500;
+	}
 	.w100{
 		width:100% !important;
 	}
@@ -1866,7 +2010,7 @@ i.require{
 	.img_banner{
 		top:30px;
 		position: absolute;
-		right:-40px;
+		right:0px;
 	}
 	.tit_banner{
 		top:170px;
@@ -2075,6 +2219,9 @@ i.require{
 	
 }
 @media only screen and (max-width: 1000px) {
+	.sizing{
+		overflow-x:auto
+	}
 	.img_login{
 		display:none;
 	}

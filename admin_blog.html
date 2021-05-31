@@ -108,70 +108,114 @@ Mình có thể giúp gì cho bạn không?
 	</nav>
 	<div class="admin_body">
     	<div class="container">
-        	<div class="box_flex">
-            	<div class="sidebar">
-                    	<ul>
-                        	<li class="active"><a href="admin_account.html"><img src="images/admin1.png" alt=""> Thông tin cá nhân</a></li>
+            <div class="box_flex">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="admin_account.html"><img src="images/admin1.png" alt=""> Thông tin cá nhân</a></li>
                         <li><a href="admin_packdata.html"><img src="images/admin2.png" alt=""> Gói cước đang dùng</a></li>
                         <li><a href="admin_news.html"><img src="images/admin3.png" alt=""> Quản lý tin tức</a></li>
                         <li><a href="admin_license.html"><img src="images/admin4.png" alt=""> Quản lý License</a></li>
-                            <li><a href="admin_blog.html"><img src="images/admin5.png" alt=""> Quản lý chủ đề blog</a></li>
-                        </ul>
-                    </div>
+                            <li class="active"><a href="admin_blog.html"><img src="images/admin5.png" alt=""> Quản lý chủ đề blog</a></li>
+                    </ul>
+                </div>
                 <div class="right_admin">
-                	<div class="backscrum">
-                    	<img src="images/home_bscrum.png" alt="">
-                        <span> Trang chủ</span>
-                        <span> /</span>
-                        <span> Thông tin tài khoản</span>
-                    </div>
-                    <div class="tit_admin">Thông tin tài khoản</div>
-                    <div class="admin_body_txt">
-                    	<div class="form_trial">
-                        	<div class="line_login">
-                                <div class="box_form">
-                                <span>Họ</span>
-                                <input class="form-control" value="Nguyễn Văn">
-                                </div>
-                            </div>
-                            <div class="line_login">
-                                <div class="box_form">
-                                    <span>Tên</span>
-                                    <input class="form-control" value="095665464">
-                                </div>
-                            </div>
-                            <div class="line_login">
-                                <div class="box_form">
-                                <span>Email</span>
-                                <input class="form-control" value="emaildemo2234@gdsldj.com">
-                                </div>
-                            </div>
-                            <div class="line_login">
-                                <div class="box_form">
-                                <span>Điện thoại </span>
-                                <input class="form-control" value="09564665" >
-                                </div>
-                            </div>
-                            <div class="line_login">
-                                <div class="box_form">
-                                <span>Tên công ty</span>
-                                <input class="form-control" value="Công ty AAA">
-                                </div>
-                            </div>
-                            <div class="line_login">
-                                <div class="box_form">
-                                <span>Địa chỉ</span>
-                                <input class="form-control" value="Hà Nội">
-                                </div>
-                            </div>
+                    <div class="backscrum">
+                    <img src="images/home_bscrum.png" alt="">
+                    <span> Trang chủ</span>
+                    <span> /</span>
+                    <span> Quản lý chủ đề blog</span>
+                </div>
+                    <div class="tit_admin">Quản lý chủ đề blog</div>
+                    <div class="filter_news">
+                        <div class="left_filter">
+                            <select class="option_news"><option>Chọn status</option></select>
+                            <a href="admin_blog_create.html" class="btn_new"><img src="images/ico_new.png" alt=""> Thêm mới chủ đề</a>
                         </div>
-                        <div class="btn_bot_new">
-                        	<a href="#" class="btn_banner">Cập nhật thông tin</a>
-                            <a href="#" class="btn_banner cancel_btn">Hủy bỏ</a>
+                        <div class="right_filter">
+                            <input class="search_news">
+                        </div>
+                    </div>
+                    <div class="table_list">
+                        <table class="table table-responsive table-bordered table_news text-center">
+                            <thead>
+                            <tr>
+                                <th width="30%">Tên chủ đề</th>
+                                <th>Người tạo</th>
+                                <th>Ngày tạo</th>
+                                <th>Trạng thái</th>
+                                <th>Hành động</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td >Cloud VMS </td>
+                                    <td>Admin</td>
+                                    <td>20/12/2021</td>
+                                    <td>Đang hoạt động</td>
+                                    <td>
+                                        <div class="setting_news">
+                                            <a href="#"><img src="images/ico_edit.png" alt=""></a>
+                                            <a href="#"><img src="images/ico_delete.png" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cloud VMS </td>
+                                    <td>Admin</td>
+                                    <td>20/12/2021</td>
+                                    <td>Đang hoạt động</td>
+                                    <td>
+                                        <div class="setting_news">
+                                            <a href="#"><img src="images/ico_edit.png" alt=""></a>
+                                            <a href="#"><img src="images/ico_delete.png" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cloud VMS </td>
+                                    <td>Admin</td>
+                                    <td>20/12/2021</td>
+                                    <td>Đang hoạt động</td>
+                                    <td>
+                                        <div class="setting_news">
+                                            <a href="#"><img src="images/ico_edit.png" alt=""></a>
+                                            <a href="#"><img src="images/ico_delete.png" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cloud VMS </td>
+                                    <td>Admin</td>
+                                    <td>20/12/2021</td>
+                                    <td>Đang hoạt động</td>
+                                    <td>
+                                        <div class="setting_news">
+                                            <a href="#"><img src="images/ico_edit.png" alt=""></a>
+                                            <a href="#"><img src="images/ico_delete.png" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="paging">
+                            <ul class="pagination modal-2">
+                              <li><a href="#" class="prev">« </a></li>
+                              <li><a href="#">1</a></li>
+                              <li> <a href="#">2</a></li>
+                              <li> <a href="#" class="active">3</a></li>
+                              <li> <a href="#">4</a></li>
+                              <li> <a href="#">5</a></li>
+                              <li> <a href="#">6</a></li>
+                              <li> <a href="#">7</a></li>
+                              <li> <a href="#">8</a></li>
+                              <li> <a href="#">9</a></li>
+                              <li><a href="#" class="next">  »</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+           
         </div>
     </div>
 	  <div class="footer">
