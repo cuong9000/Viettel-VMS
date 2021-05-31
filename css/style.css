@@ -1379,10 +1379,15 @@ i.require{
 }
 .relogin ul li a{
 	display:block;
-	padding:5px 10px;
+	padding:10px 20px;
 	color:#000;
 	border-bottom:1px dotted #ccc;
 	margin-left:0;
+	font-size:16px;
+}
+.relogin ul li a:hover{
+	text-decoration:none;
+	background:#f5f5f5;
 }
 .info_relogin{
 	margin-right:20px;
@@ -1765,6 +1770,9 @@ i.require{
 	margin-bottom:20px;
 }
 @media only screen and (min-width: 1000px) {
+	.w100{
+		width:100% !important;
+	}
 	.box_support{
 		display:flex;
 		 flex-direction: row-reverse;
@@ -1800,6 +1808,7 @@ i.require{
 	}
 	.sidebar{
 		padding-top:70px;
+		padding-bottom:40px;
 		width:25%;
 		border:1px solid #ccc;
 		border-top:none;
