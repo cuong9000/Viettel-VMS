@@ -2415,9 +2415,11 @@ a.btn_blog:hover{
 		height: auto;
 		padding: 15px 0;
 		text-align: left;
+		
 	}
 	.bot_footer span{
 		display: block;
+		margin-bottom: 5px;
 	}
 	.btn_bot_new{
 		display: block;
