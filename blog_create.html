@@ -12,8 +12,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>VIETTEL VMS</title>
-  </head>
-  <body>
+  </head> 
+<body>
   
  <!-- ------chatbox-------->
  <div class="chatbox">
@@ -45,14 +45,8 @@ Mình có thể giúp gì cho bạn không?
   <div class="top_header" id="topNav">
   		<div class="container">
             <div class="content_top">
-                <div class="relogin">
-                	<div class="info_relogin"><img src="images/ico_relogin.png" alt="" > Nguyễn Văn Mạnh <img src="images/arr_relogin.png" alt=""></div>
-                    <ul>
-                    	<li><a href="admin_info.html">Thông tin tài khoản</a></li>
-                        <li><a href="forgot_pass.html">Đổi mật khẩu</a></li>
-                        <li><a href="#">Đăng xuất</a></li>
-                    </ul>
-                </div>
+                <a href="login.html" class="login_top"><img src="images/ico_login1.png" alt=""> Đăng nhập</a>
+                <a href="register.html" class="login_top"><img src="images/ico_login.png" alt=""> Đăng ký</a>
                 <a href="#" class="flag"><img src="images/flag1.png" alt=""></a>
             	<a href="#" class="flag"><img src="images/flag2.png" alt=""></a>
             </div>
@@ -73,7 +67,7 @@ Mình có thể giúp gì cho bạn không?
 			<div class="box_menu">
 				<ul class="nav navbar-nav">
 				  <li><a href="index.html">Trang chủ</a></li>
-				  <li class="dropdown">
+				  <li class="dropdown ">
 					<a href="overview.html" >Sản phẩm </a>
 					<ul class="dropdown-menu">
 					  <li><a href="sp1.html">Cloud VMS</a></li>
@@ -91,65 +85,67 @@ Mình có thể giúp gì cho bạn không?
                   </li>
 				  <li><a href="news.html">Tin tức</a></li>
 				  
-				  <li><a href="blog.html">Blog VMS</a></li>
+				  <li class="active"><a href="blog.html">Blog VMS</a></li>
 				  <li><a href="contact.html">Liên hệ</a></li>
-                  <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quản trị</a>
-                  	<ul class="dropdown-menu">
-					  <li><a href="admin_license.html">Quản lý license</a></li>
-					  <li><a href="admin_news.html">Quản lý tin tức</a></li>
-                      <li><a href="admin_blog.html">Quản lý chủ đề blog</a></li>
-					</ul>
-                  </li>
 				</ul>
 			</div>
           </div>
 			
 		  </div>
 	</nav>
-	<div class="admin_body">
-    	<div class="container">
-        	<div class="box_flex">
-            	<div class="sidebar">
-                    	<ul>
-                        	<li><a href="admin_account.html"><img src="images/admin1.png" alt=""> Thông tin cá nhân</a></li>
-                        <li><a href="admin_packdata.html"><img src="images/admin2.png" alt=""> Gói cước đang dùng</a></li>
-                        <li><a href="admin_news.html"><img src="images/admin3.png" alt=""> Quản lý tin tức</a></li>
-                        <li><a href="admin_license.html"><img src="images/admin4.png" alt=""> Quản lý License</a></li>
-                            <li  class="active"><a href="admin_blog.html"><img src="images/admin5.png" alt=""> Quản lý chủ đề blog</a></li>
-                        </ul>
-                    </div>
-                <div class="right_admin">
-                	<div class="backscrum">
-                    	<img src="images/home_bscrum.png" alt="">
-                        <span> Trang chủ</span>
-                        <span> /</span>
-                        <span> Quản lý chủ đề blog</span>
-                    </div>
-                    <div class="tit_admin">Thêm mới chủ đề</div>
+	
+	  <div class="admin_body">
+      	<div class="container">
+            <div class="backscrum">
+				<img src="images/home_bscrum.png" alt="">
+				<span> Trang chủ</span>
+				<span> /</span>
+				<span> Blog</span>
+			</div>
+        	<div class="tit_admin">Tạo mới blog</div>
                     <div class="admin_body_txt">
                     	<div class="form_trial">
                         	<div class="line_login w100">
                                 <div class="box_form">
-                                <span>Tên chủ đề</span>
+                                <span>Tiêu đề </span>
                                 <input class="form-control">
                                 </div>
                             </div>
-                            <div class="line_login w100">
+                            <div class="line_login">
                                 <div class="box_form">
-                                <span>Trạng thái </span>
+                                <span>Chủ đề </span>
                                 <select class="form-control"><option>Draft</option></select>
                                 </div>
                             </div>
+                            <div class="line_login">
+                                <div class="fileUploadInput">
+                                    <label>Ảnh đại diện <span>( >600px, tối đa 2mb, định dạng ảnh: jpg, png, gif)</span></label>
+                                    <input type="file"/>
+                                    <button>Chọn ảnh</button>
+                                  </div>
+                            </div>
+                            
+                            <div class="line_login w100">
+                                <div class="box_form">
+                                <span>Mô tả ngắn </span>
+                                <textarea class="form-control" style="height:80px"></textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="txt_editer w100">
+                            <img src="images/editer.png" alt="">
+                            	<textarea class="form-control" style="height:180px"></textarea>
+                            </div>
                         </div>
                         <div class="btn_bot_new">
-                        	<a href="#" class="btn_banner">Thêm mới</a>
+                        	<a href="#" class="btn_banner">Tạo blog</a>
                             <a href="#" class="btn_banner cancel_btn">Hủy bỏ</a>
                         </div>
                     </div>
-                </div>
-            </div>
+           
         </div>
-    </div>
+      </div>
+	  
 	  <div class="footer">
 		  <div class="container">
 			  <div class="content_footer">

@@ -181,7 +181,7 @@ img{
 }
 .tit_h2.tit_news{
 	text-align:left;
-	margin-top:40px;
+	margin-top:30px;
 }
 .tit_banner span{
 	font-size: 22px;
@@ -1512,19 +1512,19 @@ i.require{
 
 .fileUploadInput {
   display: grid;
-  grid-gap: 10px;
   position: relative;
   z-index: 1;
 }
 .fileUploadInput label {
+	margin-bottom: 5px;
   display: flex;
   align-items: center;
-  color: setColor(primary, 0.5);
-  background: setColor(white);
   transition: 0.4s ease;
-  font-family: arial, sans-serif;
-  font-size: 0.75em;
-  font-weight: regular;
+	font-weight: 400;
+}
+.fileUploadInput label span{
+	font-size: 12px;
+	color: #999;
 }
 .fileUploadInput input {
   position: relative;
@@ -1534,9 +1534,6 @@ i.require{
   height: 50px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-family: arial, sans-serif;
-  font-size: 1rem;
-  font-weight: regular;
 }
 .fileUploadInput input[type=file] {
   padding: 0 gap(m);
@@ -1571,13 +1568,9 @@ i.require{
 .btn_banner.cancel_btn:hover{
 	background:#888;
 }
-.btn_bot_new .btn_banner{
-	margin-right:20px;
-}
 .btn_bot_new{
 	display:flex;
 	justify-content:flex-start;
-	margin-bottom:40px;
 }
 .btn_bot_new .btn_banner{
 	max-width:none;
@@ -1806,6 +1799,7 @@ i.require{
 }
 .line_content{
 	border-bottom:1px dotted #ccc;
+	padding-bottom: 20px;
 }
 .reply_bl{
 	margin-top:5px;
@@ -1909,7 +1903,58 @@ i.require{
 	font-size:18px;
 	font-weight:bold;
 }
+.line_right_blog .search_right{
+	width: 100%;
+}
+.line_right_blog{
+	margin-bottom: 20px;
+}
+.line_right_blog h4{
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.line_right_blog .form-control{
+	height: 40px;
+}
+a.btn_blog{
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    padding: 15px 58px;
+    color: #fff;
+    background: #EE0033;
+    border-radius: 4px;
+    text-align: center;
+}
+a.btn_blog:hover{
+	color:#fff;
+	text-decoration:none;
+	background:#DD2F2F;
+}
+.btn_blog img{
+	vertical-align: middle;
+	padding-right: 5px;
+}
+.right_blog{
+	margin-top: 30px;
+}
+.comt_box{
+	margin-top: 20px;
+}
 @media only screen and (min-width: 1000px) {
+	.right_blog{
+		width: 25%;
+		padding-left: 30px;
+	}
+	.blog_list{
+		width: 75%;
+	}
+	.blog_flex{
+		display: flex;
+		flex-direction: row-reverse;
+	}
 	.short_new{
 		font-size:18px;
 		font-weight:500;
@@ -1999,9 +2044,10 @@ i.require{
 	}
 	.benefit_sp .txt_feature p{
 		min-height:70px;
+		margin-bottom: 0;
 	}
 	.benefit_sp .box_feature{
-		min-height:286px;
+		min-height:315px;
 	}
 	
 	.navbar-brand{
@@ -2357,6 +2403,16 @@ i.require{
 
 
 @media only screen and (max-width: 767px) {
+	a.btn_blog{
+		font-size: 16px;
+	}
+	.txt_box_news .social_news img{
+		height: 13px;
+	}
+	.social_news div{
+		font-size: 12px;
+		padding-right: 10px;
+	}
 	.modal-2 li a{
 		display:none;
 	}
@@ -2375,7 +2431,6 @@ i.require{
 	}
 	.search_right{
 		width:100%;
-		margin-top:10px;
 	}
 	.txt_box_news{
 		margin-top:20px;
@@ -2599,7 +2654,6 @@ i.require{
 		margin:10px auto;
 		font-size:16px;
 		padding:10px 20px;
-		line-height:40px;
 	}
 	.btn_form .btn_banner{
 		padding:5px 10px;
@@ -2633,8 +2687,6 @@ i.require{
 	}
 	.btn_seemore,.btn_about{
 		font-size: 14px;
-		line-height: 40px;
-		height: 40px;
 		margin-right: 0;
 		max-width: 160px;
 	}
