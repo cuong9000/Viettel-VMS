@@ -1947,6 +1947,9 @@ a.btn_blog:hover{
 	margin-bottom: 40px;
 }
 @media only screen and (min-width: 1000px) {
+	.btn_bot_new .btn_banner{
+		margin-bottom: 40px;
+}
 	.cancel_btn{
 		margin-left: 20px;
 	}
