@@ -2410,6 +2410,14 @@ a.btn_blog:hover{
 
 
 @media only screen and (max-width: 767px) {
+	.bot_footer{
+		line-height: normal;
+		height: auto;
+		padding: 15px 0;
+	}
+	.bot_footer span{
+		display: block;
+	}
 	.btn_bot_new{
 		display: block;
 		margin-bottom: 30px;
