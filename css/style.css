@@ -1943,7 +1943,13 @@ a.btn_blog:hover{
 .comt_box{
 	margin-top: 20px;
 }
+.create_blog{
+	margin-bottom: 40px;
+}
 @media only screen and (min-width: 1000px) {
+	.cancel_btn{
+		margin-left: 20px;
+	}
 	.right_blog{
 		width: 25%;
 		padding-left: 30px;
