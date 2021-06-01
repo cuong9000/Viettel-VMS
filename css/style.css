@@ -2414,6 +2414,7 @@ a.btn_blog:hover{
 		line-height: normal;
 		height: auto;
 		padding: 15px 0;
+		text-align: left;
 	}
 	.bot_footer span{
 		display: block;
