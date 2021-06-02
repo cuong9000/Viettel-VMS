@@ -1814,9 +1814,11 @@ i.require{
 .reply_bl{
 	margin-top:5px;
 	display:inline-block;
-	padding:5px;
+	padding:5px 10px;
 	background:#f2f2f2;
 	border-radius:4px;
+	color: #000;
+	font-size: 12px;
 }
 .btn_bl{
 	text-align:right;
