@@ -1797,9 +1797,19 @@ i.require{
 .content_bl .content_bl{
 	padding-left:46px;
 }
+.content_bl .content_bl .btn_bot_new{
+	justify-content: flex-end;
+}
+.content_bl .content_bl .btn_bot_new .btn_banner{
+	margin-top: 15px;
+	font-size: 16px;
+	padding: 10px 30px;
+	background: #999;
+	margin-right: 0;
+	margin-bottom: 20px;
+}
 .line_content{
 	border-bottom:1px dotted #ccc;
-	padding-bottom: 20px;
 }
 .reply_bl{
 	margin-top:5px;
