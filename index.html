@@ -45,13 +45,301 @@ Mình có thể giúp gì cho bạn không?
   <div class="top_header" id="topNav">
   		<div class="container">
             <div class="content_top">
-                <a href="login.html" class="login_top"><img src="images/ico_login1.png" alt=""> Đăng nhập</a>
-                <a href="register.html" class="login_top"><img src="images/ico_login.png" alt=""> Đăng ký</a>
+                <a href="#" class="login_top" data-toggle="modal" data-target="#login"><img src="images/ico_login1.png" alt=""> Đăng nhập</a>
+                <a href="#" class="login_top" data-toggle="modal" data-target="#register"><img src="images/ico_login.png" alt=""> Đăng ký</a>
                 <a href="#" class="flag"><img src="images/flag1.png" alt=""></a>
             	<a href="#" class="flag"><img src="images/flag2.png" alt=""></a>
             </div>
         </div>
+       
   </div>
+    <!-- login -->
+
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+		  <div class="modal-dialog">
+
+			<div class="modal-content">
+
+			  <div class="modal-header">
+
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+			  </div>
+
+			  <div class="modal-body">
+				<div class="content_login">
+					<div class="logo_login">
+						<img src="images/logo.png" alt="">
+					</div>
+					<div class="tit_login">
+						<h3>Đăng nhập hệ thống</h3>
+					</div>
+					<div class="line_login error">
+						<div class="box_form">
+						<span>Tên đăng nhập <i class="require">*</i></span>
+						<input class="form-control">
+						<div class="txt_require">Tên đăng nhập bắt buộc nhập</div>
+						</div>
+					</div>
+					<div class="line_login">
+						<div class="box_form">
+						<span>Mật khẩu <i class="require">*</i></span>
+						<input class="form-control" type="password">
+						<a href="#" class="link_forgot" data-dismiss="modal" data-toggle="modal" data-target="#forgot_pass">Quên mật khẩu?</a>
+						<a class="view_pass" href=""><img src="images/view_pass.png" alt=""></a>
+						</div>
+					</div>
+					<div class="remember_pass">
+						<label><input type="checkbox"> Nhớ mật khẩu</label>
+					</div>
+					<div class="btn_login">
+						<a href="#">Đăng nhập</a>
+					</div>
+					<div class="link_login">
+						<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#register">Đăng ký tài khoản</a>
+					</div>
+				</div>
+			  </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+   
+    <!-- register -->
+
+		<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+		  <div class="modal-dialog">
+
+			<div class="modal-content">
+
+			  <div class="modal-header">
+
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+			  </div>
+
+			  <div class="modal-body">
+				<div class="content_login">
+                <div class="logo_login">
+                	<img src="images/logo.png" alt="">
+                </div>
+                <div class="tit_login">
+                	<h3>Đăng ký tài khoản</h3>
+                </div>
+                <div class="line_login error">
+                	<div class="box_form">
+                    <span>Email <i class="require">*</i></span>
+                    <input class="form-control">
+                    <div class="txt_require">Email không đúng định dạng</div>
+                    </div>
+                </div>
+                <div class="line_login ">
+                	<div class="box_form">
+                    <span>Tên đăng nhập <i class="require">*</i></span>
+                    <input class="form-control">
+                    </div>
+                </div>
+                <div class="line_login">
+                	<div class="box_form">
+                    <span>Mật khẩu <i class="require">*</i></span>
+                    <input class="form-control" type="password">
+                    <a class="view_pass" href=""><img src="images/view_pass.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="line_login">
+                	<div class="box_form">
+                    <span>Nhập lại mật khẩu <i class="require">*</i></span>
+                    <input class="form-control" type="password">
+                    <a class="view_pass" href=""><img src="images/view_pass.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="remember_pass">
+                	<label><input type="checkbox"> Tôi đồng ý với <a href="#">điều khoản và chính sách</a> của Viettel</label>
+                </div>
+                <div class="btn_login">
+                	<a href="#" data-toggle="modal" data-dismiss="modal" data-target="#register_confirm">Đăng ký tài khoản</a>
+                </div>
+            </div>
+			  </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+		
+		 <!-- register_confirm -->
+
+		<div class="modal fade" id="register_confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+		  <div class="modal-dialog">
+
+			<div class="modal-content">
+
+			  <div class="modal-header">
+
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+			  </div>
+
+			  <div class="modal-body">
+				   <div class="content_login">
+                <div class="logo_login">
+                	<img src="images/logo.png" alt="">
+                </div>
+                <div class="tit_login">
+                	<h3>Xác nhận đăng ký tài khoản VMS</h3>
+                    
+                </div>
+                <div class="txt_note">
+                Mã xác nhận đã được gửi về số điện thoại 09342xxxxxx
+Vui lòng kiếm tra tin nhắn để nhập mã xác nhận đăng ký tài
+khoản VMS
+                </div>
+                <hr class="hr_login">
+                <div class="line_login">
+                	<div class="box_form">
+                    <span>Nhập mã xác nhận </span>
+                    <div class="flex_form">
+                    	<input class="form-control">
+                        <div class="btn_login">
+                            <a href="#">Xác nhận</a>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+               <hr class="hr_login">
+                <div class="flex_form">
+                	<div class="txt_note">Mã Code hết hiệu lực sau: <span>2</span>phút</div>
+                    <div class="btn_login default">
+                        <a href="#">Gửi lại code</a>
+                    </div>
+                </div>
+            </div>
+			  </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+		
+		<!-- forgot_pass -->
+
+		<div class="modal fade" id="forgot_pass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+		  <div class="modal-dialog">
+
+			<div class="modal-content">
+
+			  <div class="modal-header">
+
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+			  </div>
+
+			  <div class="modal-body">
+				   <div class="content_login">
+                <div class="logo_login">
+                	<img src="images/logo.png" alt="">
+                </div>
+                <div class="tit_login">
+                	<h3>Quên mật khẩu</h3>
+                </div>
+                <div class="line_login">
+                	<div class="box_form">
+                    <span>Email đã đăng ký </span>
+                    <input class="form-control">
+                    </div>
+                </div>
+                <hr class="hr_login">
+                <div class="line_login">
+                	<div class="box_form">
+                    <span>Số điện thoại đã đăng ký </span>
+                    <input class="form-control">
+                    </div>
+                </div>
+                
+                <div class="btn_login">
+                	<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#change_pass">Xác nhận</a>
+                </div>
+                
+            </div>
+			  </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+   
+   		<!-- change_pass -->
+
+		<div class="modal fade" id="change_pass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+		  <div class="modal-dialog">
+
+			<div class="modal-content">
+
+			  <div class="modal-header">
+
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+			  </div>
+
+			  <div class="modal-body">
+				   <div class="content_login">
+            	
+                <div class="logo_login">
+                	<img src="images/logo.png" alt="">
+                </div>
+                <div class="tit_login">
+                	<h3>Thay đổi mật khẩu</h3>
+                </div>
+                <div class="line_login ">
+                	<div class="box_form">
+                    <span>Tên đăng nhập <i class="require">*</i></span>
+                    <input class="form-control">
+                    </div>
+                </div>
+                <div class="line_login">
+                	<div class="box_form">
+                    <span>Mật khẩu hiện tại <i class="require">*</i></span>
+                    <input class="form-control" type="password">
+                    <a class="view_pass" href=""><img src="images/view_pass.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="line_login">
+                	<div class="box_form">
+                    <span>Mật khẩu mới <i class="require">*</i></span>
+                    <input class="form-control" type="password">
+                    <a class="view_pass" href=""><img src="images/view_pass.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="line_login">
+                	<div class="box_form">
+                    <span>Nhập lại mật khẩu mới <i class="require">*</i></span>
+                    <input class="form-control" type="password">
+                    <a class="view_pass" href=""><img src="images/view_pass.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="btn_login">
+                	<a href="#">Lưu thay đổi</a>
+                </div>
+                
+            </div>
+			  </div>
+
+			</div>
+
+		  </div>
+
+		</div>
     <nav class="navbar navbar-expand-lg ">
 		  <div class="container">
 			<div class="navbar-header">
