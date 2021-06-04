@@ -1270,11 +1270,11 @@ i.require{
 	z-index: 77;
 }
 .ctrlq.fb-button{
-	bottom:  104px !important;
+	bottom:  20px !important;
 	right: 19px !important;
 }
 .zalo-chat-widget{
-	    bottom: 160px !important;
+	    bottom: 85px !important;
     right: 15px !important;
 	z-index: 33 !important;
 }
@@ -1841,10 +1841,10 @@ i.require{
 	background:#e6e6e6;
 	text-decoration:none;
 }
-.txt_bl{
+/*.txt_bl{
 	padding-left:15px;
 	width:calc(100% - 46px);
-}
+}*/
 .txt_bl h4{
 	font-size:14px;
 	font-weight:bold;
