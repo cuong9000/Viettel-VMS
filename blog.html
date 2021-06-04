@@ -14,7 +14,61 @@
     <title>VIETTEL VMS</title>
   </head> 
 <body>
-  
+      <!-- login -->
+
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+		  <div class="modal-dialog">
+
+			<div class="modal-content">
+
+			  <div class="modal-header">
+
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+			  </div>
+
+			  <div class="modal-body">
+				<div class="content_login">
+					<div class="logo_login">
+						<img src="images/logo.png" alt="">
+					</div>
+					<div class="tit_login">
+						<h3>Đăng nhập hệ thống</h3>
+					</div>
+					<div class="line_login error">
+						<div class="box_form">
+						<span>Tên đăng nhập <i class="require">*</i></span>
+						<input class="form-control">
+						<div class="txt_require">Tên đăng nhập bắt buộc nhập</div>
+						</div>
+					</div>
+					<div class="line_login">
+						<div class="box_form">
+						<span>Mật khẩu <i class="require">*</i></span>
+						<input class="form-control" type="password">
+						<a href="#" class="link_forgot" data-dismiss="modal" data-toggle="modal" data-target="#forgot_pass">Quên mật khẩu?</a>
+						<a class="view_pass" href=""><img src="images/view_pass.png" alt=""></a>
+						</div>
+					</div>
+					<div class="remember_pass">
+						<label><input type="checkbox"> Nhớ mật khẩu</label>
+					</div>
+					<div class="btn_login">
+						<a href="blog_create.html">Đăng nhập</a>
+					</div>
+					<div class="link_login">
+						<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#register">Đăng ký tài khoản</a>
+					</div>
+				</div>
+			  </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+   
  <!-- ------chatbox-------->
  <div class="chatbox">
 	 <div class="ico_chatbox"><img src="images/chatbox.png" alt="">
@@ -41,7 +95,61 @@ Mình có thể giúp gì cho bạn không?
 	 </div>
  </div>
  <!-- ------END chatbox-------->
-  
+     <!-- login -->
+
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+		  <div class="modal-dialog">
+
+			<div class="modal-content">
+
+			  <div class="modal-header">
+
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+			  </div>
+
+			  <div class="modal-body">
+				<div class="content_login">
+					<div class="logo_login">
+						<img src="images/logo.png" alt="">
+					</div>
+					<div class="tit_login">
+						<h3>Đăng nhập hệ thống</h3>
+					</div>
+					<div class="line_login error">
+						<div class="box_form">
+						<span>Tên đăng nhập <i class="require">*</i></span>
+						<input class="form-control">
+						<div class="txt_require">Tên đăng nhập bắt buộc nhập</div>
+						</div>
+					</div>
+					<div class="line_login">
+						<div class="box_form">
+						<span>Mật khẩu <i class="require">*</i></span>
+						<input class="form-control" type="password">
+						<a href="#" class="link_forgot" data-dismiss="modal" data-toggle="modal" data-target="#forgot_pass">Quên mật khẩu?</a>
+						<a class="view_pass" href=""><img src="images/view_pass.png" alt=""></a>
+						</div>
+					</div>
+					<div class="remember_pass">
+						<label><input type="checkbox"> Nhớ mật khẩu</label>
+					</div>
+					<div class="btn_login">
+						<a href="#">Đăng nhập</a>
+					</div>
+					<div class="link_login">
+						<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#register">Đăng ký tài khoản</a>
+					</div>
+				</div>
+			  </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+    
   <div class="top_header" id="topNav">
   		<div class="container">
             <div class="content_top">
@@ -119,15 +227,16 @@ quản lý, lưu trữ, kết hợp phân tích dữ liệu video thông minh</s
             </div>
             <div class="blog_flex">
             	<div class="right_blog">
+            		<div class="line_right_blog">
+						<h4>Chủ đề bLog VMS</h4>
+						<select class="form-control"><option>Tất cả</option></select>
+					</div>
 					<div class="line_right_blog">
 						<input class="search_right">
 					</div>
+					
 					<div class="line_right_blog">
-						<h4>Chủ đề bLog VMS</h4>
-						<select class="form-control"><option></option></select>
-					</div>
-					<div class="line_right_blog">
-						<a href="blog_create.html" class="btn_blog"><img src="images/ico_tao_blog.png" alt=""> Tạo mới blog</a>
+						<a href="#" class="btn_blog" data-toggle="modal" data-target="#login"><img src="images/ico_tao_blog.png" alt=""> Tạo mới blog</a>
 					</div>
 				</div>
             	<div class="blog_list">

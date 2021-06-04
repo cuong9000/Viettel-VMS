@@ -64,10 +64,16 @@ img{
 	margin-left: 14px;
 	display: block;
 }
+.table>thead>tr>th{
+	vertical-align:middle;
+}
 .btn_signup:hover,.btn_signup:focus{
 	color: #fff;
 	background: #EE0033;
 	text-decoration: none;
+}
+.view_data{
+	padding-left: 5px;
 }
 .btn_signin{
 	width: 128px;
@@ -956,7 +962,7 @@ a.more_feature:hover{
 .topNav .navbar{
 	top:0;
 	transition:all 0.5s;
-	box-shadow: 0px 0px 20px rgb(41 41 42 / 15%);
+	box-shadow: 0px 0px 20px rgb(41 41 42 / 35%);
 	
 }
 .box_overview{
@@ -1258,10 +1264,19 @@ i.require{
 }
 .ico_chatbox{
 	position: fixed;
-	bottom: 65px;
-	right: 40px;
+	bottom: 20px;
+	right: 10px;
 	cursor: pointer;
 	z-index: 77;
+}
+.ctrlq.fb-button{
+	bottom:  104px !important;
+	right: 19px !important;
+}
+.zalo-chat-widget{
+	    bottom: 160px !important;
+    right: 15px !important;
+	z-index: 33 !important;
 }
 .ico_chatbox span{
 	position: absolute;
@@ -1290,7 +1305,7 @@ i.require{
 	background: #fff;
 	width: 100%;
 	max-width: 320px;
-	z-index: 99;
+	z-index: 9999999999;
 	border-radius: 4px;
 	border: 1px solid #ccc;
 	display: none;
@@ -1667,7 +1682,7 @@ i.require{
 .menu_right li ul {
 	display:none;
 }
-.menu_right li:hover ul,.menu_right li.active ul {
+.menu_right li:hover ul {
 	display:block;
 }
 .menu_right li.active a{

@@ -95,7 +95,7 @@ Mình có thể giúp gì cho bạn không?
 				  <li><a href="contact.html">Liên hệ</a></li>
                   <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quản trị</a>
                   	<ul class="dropdown-menu">
-					  <li><a href="admin_license.html">Quản lý license</a></li>
+					  <li><a href="admin_license.html">Thông tin khách hàng</a></li>
 					  <li><a href="admin_news.html">Quản lý tin tức</a></li>
                       <li><a href="admin_blog.html">Quản lý chủ đề blog</a></li>
 					</ul>
@@ -114,20 +114,12 @@ Mình có thể giúp gì cho bạn không?
                         	<li><a href="admin_account.html"><img src="images/admin1.png" alt=""> Thông tin cá nhân</a></li>
                             <li><a href="admin_news.html"><img src="images/admin2.png" alt=""> Gói cước đang dùng</a></li>
                             <li><a href="admin_news.html"><img src="images/admin3.png" alt=""> Quản lý tin tức</a></li>
-                            <li class="active"><a href="admin_license.html"><img src="images/admin4.png" alt=""> Quản lý License</a></li>
-                            <li class="sub_menu"><a href=""> <b>Thông tin khách hàng</b></a></li>
-                            <li class="sub_menu"><a href=""> Gói cước sử dụng</a></li>
+                            <li class="active"><a href="admin_license.html"><img src="images/admin4.png" alt=""> Thông tin khách hàng</a></li>
                             <li><a href="admin_blog.html"><img src="images/admin5.png" alt=""> Quản lý chủ đề blog</a></li>
                             
                         </ul>
                     </div>
                 <div class="right_admin">
-                	<div class="backscrum">
-                    	<img src="images/home_bscrum.png" alt="">
-                        <span> Trang chủ</span>
-                        <span> /</span>
-                        <span> Quản lý license</span>
-                    </div>
                     <div class="tit_admin">Quản lý thông tin khách hàng</div>
                     <div class="admin_body_txt">
                     	<div class="table_list">
@@ -140,41 +132,42 @@ Mình có thể giúp gì cho bạn không?
                                 <th>Số điện thoại</th>
                                 <th>Email</th>
                                 <th>Địa chỉ</th>
+                                <th>Loại yêu cầu</th>
+                                <th>Gói cước sử dụng</th>
                             </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td class="text-left">Nguyễn Văn A</td>
-                                    <td>20/02/2020</td>	
-                                    <td>30/02/2020</td>
-                                    <td>100.000</td>
-                                    <td>Đang hoạt động</td>
+									<td class="text-left">Nguyễn Văn A</td>
+                                    <td>20/02/1990</td>	
+                                    <td>098483483</td>
+                                    <td></td>
+                                    <td>Hà Nội</td>
+                                    <td>KH đăng ký tư vấn</td>
+                                    <td>Cloud VMS</td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td class="text-left">Nguyễn Văn A</td>
-                                    <td>20/02/2020</td>	
-                                    <td>30/02/2020</td>
-                                    <td>100.000</td>
-                                    <td>Đang hoạt động</td>
+                                    <td>2</td>
+									<td class="text-left">Nguyễn Văn B</td>
+                                    <td>20/02/1990</td>	
+                                    <td>098483483</td>
+                                    <td></td>
+                                    <td>Hà Nội</td>
+                                    <td>KH đã mua sản phẩm</td>
+									<td>Cloud VMS, On-Premise <a href="#" data-toggle="modal" data-target="#goicuoc" class="view_data"><img src="images/view_data.png" alt=""></a></td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td class="text-left">Nguyễn Văn A</td>
-                                    <td>20/02/2020</td>	
-                                    <td>30/02/2020</td>
-                                    <td>100.000</td>
-                                    <td>Đang hoạt động</td>
+                                    <td>3</td>
+									<td class="text-left">Nguyễn Văn C</td>
+                                    <td>20/02/1990</td>	
+                                    <td>098483483</td>
+                                    <td></td>
+                                    <td>Hà Nội</td>
+                                    <td>KH đăng ký dùng thử</td>
+                                    <td>Cloud VMS, </td>
                                 </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="text-left">Nguyễn Văn A</td>
-                                    <td>20/02/2020</td>	
-                                    <td>30/02/2020</td>
-                                    <td>100.000</td>
-                                    <td>Đang hoạt động</td>
-                                </tr>
+                                
                             </tbody>
                         </table>
                         <div class="paging">
@@ -198,6 +191,74 @@ Mình có thể giúp gì cho bạn không?
             </div>
         </div>
     </div>
+    
+     <!-- popup gói cước -->
+
+		<div class="modal fade" id="goicuoc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+		  <div class="modal-dialog">
+
+			<div class="modal-content">
+
+			  <div class="modal-header">
+
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title" id="myModalLabel">Gói cước đang sử dụng</h4>
+			  </div>
+
+			  <div class="modal-body">
+			      <div class="tit_admin" style="margin-top: 0">Nguyễn Văn A</div>
+				  <div class="table_list">
+                        <table class="table table-responsive table-bordered table_news text-center">
+                            <thead>
+                            <tr>
+                                <th width="40">STT</th>
+                                <th>Gói cước</th>
+                                <th>Ngày kích hoạt</th>
+                                <th>Ngày hết hạn</th>
+                                <th>Giá gói cước</th>
+                                <th>Trạng thái</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Cloud VMS</td>
+                                    <td>20/02/2020</td>	
+                                    <td>30/02/2020</td>
+                                    <td>100.000</td>
+                                    <td>Đang hoạt động</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Cloud VMS</td>
+                                    <td>20/02/2020</td>	
+                                    <td>30/02/2020</td>
+                                    <td>100.000</td>
+                                    <td>Đang hoạt động</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Cloud VMS</td>
+                                    <td>20/02/2020</td>	
+                                    <td>30/02/2020</td>
+                                    <td>100.000</td>
+                                    <td>Đang hoạt động</td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+			  </div>
+
+			</div>
+
+		  </div>
+
+		</div>
+   
 	  <div class="footer">
 		  <div class="container">
 			  <div class="content_footer">
