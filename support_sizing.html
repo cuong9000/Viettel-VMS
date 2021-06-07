@@ -90,7 +90,7 @@ quản lý, lưu trữ, kết hợp phân tích dữ liệu video thông minh</s
             	<div class="line_sizing">
                 	<div class="storage_throughput">
                     	<div class="storage">
-                        	<h3>Storage Calculator</h3>
+							<h3>Storage Calculator <span>Throughput</span></h3>
                             <div class="function">Video</div>
                             <table>
                             	<tr>
@@ -104,6 +104,8 @@ quản lý, lưu trữ, kết hợp phân tích dữ liệu video thông minh</s
                                     <th>Storage /day<p>[Gb/day]</p></th>
                                     <th>Retention<p>[Days]</p></th>
                                     <th>Total Storage<p>[Gb]</p></th>
+                                    <th width="30" class="nobg"></th>
+                                    <th>Recording<p>[Mps]</p></th>
                                 </tr>
                                 <tr>
                                 	<td><input class="input_sizing"></td>
@@ -116,6 +118,8 @@ quản lý, lưu trữ, kết hợp phân tích dữ liệu video thông minh</s
                                     <td><input class="input_sizing text-right" disabled value="1536"></td>
                                     <td><input class="input_sizing" value="1"></td>
                                     <td><input class="input_sizing" disabled value="1535.90"></td>
+                                    <td class="nobg"></td>
+                                    <td><input class="input_sizing" disabled value="12.00"></td>
                                 </tr>
                                 <tr>
                                 	<td><input class="input_sizing"></td>
@@ -128,6 +132,8 @@ quản lý, lưu trữ, kết hợp phân tích dữ liệu video thông minh</s
                                     <td><input class="input_sizing text-right" disabled value="1536"></td>
                                     <td><input class="input_sizing" value="1"></td>
                                     <td><input class="input_sizing" disabled value="1535.90"></td>
+                                    <td class="nobg"></td>
+                                    <td><input class="input_sizing" disabled value="12.00"></td>
                                 </tr>
                                 <tr>
                                 	<td><input class="input_sizing"></td>
@@ -140,6 +146,13 @@ quản lý, lưu trữ, kết hợp phân tích dữ liệu video thông minh</s
                                     <td><input class="input_sizing text-right" disabled value="1536"></td>
                                     <td><input class="input_sizing" value="1"></td>
                                     <td><input class="input_sizing" disabled value="1535.90"></td>
+                                    <td class="nobg"></td>
+                                    <td><input class="input_sizing" disabled value="12.00"></td>
+                                </tr>
+                                <tr>
+                                	<td class="tit_table" colspan="10">
+										<button class="add_row btn"><img src="images/add_row.png" alt=""> Add Row</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                 	<td class="tit_table" colspan="10">
@@ -157,6 +170,13 @@ quản lý, lưu trữ, kết hợp phân tích dữ liệu video thông minh</s
                                     <td><input class="input_sizing" value="0" disabled></td>
                                     <td><input class="input_sizing" value="0" ></td>
                                     <td><input class="input_sizing" value="0" disabled></td>
+                                    <td class="nobg"></td>
+                                    <td><input class="input_sizing" disabled value="12.00"></td>
+                                </tr>
+                                <tr>
+                                	<td class="tit_table" colspan="10">
+										<button class="add_row btn"><img src="images/add_row.png" alt=""> Add Row</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                 	<td class="tit_table" colspan="10">
@@ -174,43 +194,12 @@ quản lý, lưu trữ, kết hợp phân tích dữ liệu video thông minh</s
                                     <td></td>
                                     <td></td>
                                     <td><input class="input_sizing" value="135.90" disabled></td>
+                                    <td class="nobg"></td>
+                                    <td><input class="input_sizing" disabled value="12.00"></td>
                                 </tr>
                             </table>
                         </div>
-                        <div class="throughput">
-                        	<h3>Throughput</h3>
-                            <div class="function"></div>
-                            <table>
-                            	<tr>
-                                    <th>Recording<p>[Mps]</p></th>
-                                </tr>
-                                <tr>
-                                	<td><input class="input_sizing" disabled value="12.00"></td>
-                                </tr>
-                                <tr>
-                                	<td><input class="input_sizing" disabled value="12.00"></td>
-                                </tr>
-                                <tr>
-                                	<td><input class="input_sizing" disabled value="12.00"></td>
-                                </tr>
-                                <tr>
-                                	<td class="tit_table">
-                                    	
-                                    </td>
-                                </tr>
-                                <tr>
-                                	<td><input class="input_sizing" disabled value="12.00"></td>
-                                </tr>
-                                <tr>
-                                	<td class="tit_table">
-                                    	
-                                    </td>
-                                </tr>
-                                <tr>
-                                	<td><input class="input_sizing" disabled value="12.00"></td>
-                                </tr>
-                            </table>
-                        </div>
+                        
                     </div>
                 </div>
                 
@@ -231,7 +220,7 @@ Network<p>[Mps]</p></th>
                                     <th>Outcoming<br>Network<p>[Mps]</p></th>
                                     <th>Computational<br>Throughput<p>[Mps]</p></th>
                                     <th>CMax Storage<p>[Gb]</p></th>
-                                    <th>ONum Of Server<br>
+                                    <th>Num Of Server<br>
 Required</th>
                                 </tr>
                                 <tr>
@@ -245,6 +234,11 @@ Required</th>
                                     <td><input class="input_sizing text-right" disabled value="1536"></td>
                                     <td><input class="input_sizing" value="1"></td>
                                     <td><input class="input_sizing" disabled value="1535.90"></td>
+                                </tr>
+                                <tr>
+                                	<td class="tit_table" colspan="10">
+										<button class="add_row btn"><img src="images/add_row.png" alt=""> Add Row</button>
+                                    </td>
                                 </tr>
                             </table>
                         </div>

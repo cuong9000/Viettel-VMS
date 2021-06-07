@@ -6,6 +6,9 @@ h1,h2,h3,h4,h5{
   width: 2px;
   height:2px;
 }
+.nobg{
+	background: #fff !important;
+}
 a:focus{
 	text-decoration:none;
 }
@@ -1871,6 +1874,22 @@ i.require{
 	border-bottom:1px solid #ccc;
 	padding-bottom:15px;
 	font-weight:400;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.line_sizing h3 span{
+	position: relative;
+}
+.line_sizing h3 span::before{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 1px;
+	background: #fff;
+	bottom: -16px;
+	left: -6px;
 }
 .throughput{
 	padding-left:30px;
