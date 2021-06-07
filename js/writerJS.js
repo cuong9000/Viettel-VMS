@@ -16,3 +16,7 @@ $(window).scroll(function() {
 			$(this).parent().parent().parent().removeClass("open_chat");
 		});
 	});
+
+$(document).ready(function() {
+    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
