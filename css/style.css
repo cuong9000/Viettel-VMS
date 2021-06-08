@@ -9,6 +9,11 @@ h1,h2,h3,h4,h5{
 .nobg{
 	background: #fff !important;
 }
+a.more_faq{
+	color: #EE0033;
+	font-style: italic;
+}
+
 a:focus{
 	text-decoration:none;
 }
