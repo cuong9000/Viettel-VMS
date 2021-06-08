@@ -6,10 +6,14 @@ h1,h2,h3,h4,h5{
   width: 2px;
   height:2px;
 }
+ .morecontent span {
+    display: none;
+}
+
 .nobg{
 	background: #fff !important;
 }
-a.more_faq{
+a.morelink{
 	color: #EE0033;
 	font-style: italic;
 }
