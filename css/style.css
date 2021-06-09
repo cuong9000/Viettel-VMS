@@ -850,6 +850,7 @@ text-align: center;
 }
 .link_footer{
 	margin-left: 80px;
+	margin-top: 20p;
 }
 .link_footer h3{
 	font-weight: 600;
@@ -1390,7 +1391,7 @@ i.require{
 	position:absolute;
 	top:39px;
 	background:#fff;
-	width:200px;
+	width: 220px;
 	right:0;
 	padding:0;
 	box-shadow:1px 2px 4px rgba(0,0,0,.2);
@@ -1418,6 +1419,9 @@ i.require{
 .relogin ul li a:hover{
 	text-decoration:none;
 	background:#f5f5f5;
+}
+.relogin ul li a img{
+	padding-right: 5px;
 }
 .info_relogin{
 	margin-right:20px;
