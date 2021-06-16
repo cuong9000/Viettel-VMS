@@ -560,9 +560,14 @@ a.btn_demo:hover{
 font-size: 20px;
 line-height: 32px;
 	color: #EE0033;
+	
 }
 .txt_news h3 a{
 	color:#333;
+	display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
 .txt_news h3 a:hover{
 	color:#EE0033;
@@ -726,7 +731,7 @@ a.more_news:hover{
 }
 .img_news img{
 	max-width: 100%;
-	
+	height: 100%;
 }
 .l_ico_new{
 	position: absolute;
