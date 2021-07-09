@@ -6,6 +6,11 @@ h1,h2,h3,h4,h5{
   width: 2px;
   height:2px;
 }
+.footer_admin{
+	font-size: 14px;
+	padding: 15px 0;
+	text-align: center;
+}
 .img_box_news{
 	max-height: 150px;
 	overflow: hidden;
@@ -49,6 +54,10 @@ body{
 	padding: 0;
 	line-height: normal;
 	margin-top: 18px;
+	float: none;
+	padding-left: 15px;
+    padding-right: 15px;
+    display: block;
 }
 img{
 	max-width:100%;
@@ -169,6 +178,7 @@ img{
 	top: 39px;
 	z-index: 88;
 	height:76px;
+	float: none;
 	
 }
 .banner .container{
@@ -1236,7 +1246,7 @@ i.require{
 	margin:30px 0;
 }
 .line_login .form-control{
-	height:50px;
+	height:40px;
 }
 .btn_login a{
 	display:block;
@@ -1408,7 +1418,7 @@ i.require{
 .admin_body{
 	border-top:1px solid #ccc;
 	border-bottom:1px solid #ccc;
-	margin-top:117px;
+	margin-top:39px;
 }
 .relogin:hover ul{
 	display:block;
@@ -1447,6 +1457,7 @@ i.require{
 }
 .sidebar ul{
 	padding:0;
+	padding-top: 40px;
 }
 .sidebar li{
 	list-style:none;
@@ -2068,12 +2079,13 @@ a.btn_blog:hover{
 		align-items:center;
 	}
 	.sidebar{
-		padding-top:70px;
+		padding-top:0px;
 		padding-bottom:40px;
 		width:22%;
 		border:1px solid #ccc;
 		border-top:none;
 		border-bottom:none;
+		height: calc(100vh - 129px);
 	}
 	.right_admin{
 		width:78%;
@@ -2600,7 +2612,13 @@ a.btn_blog:hover{
 		margin-left:15px;
 	}
 	.navbar-brand{
-		margin-top:15px;
+		margin-top:0px;
+		padding-top: 20px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.sidebar ul{
+		padding-top: 30px;
 	}
 	.navbar-toggle{
 		margin-top:14px;
